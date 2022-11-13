@@ -2,7 +2,7 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
 import Image from "next/image";
-import bashar from "../public/dev-ed-wave.png"
+import bashar from "../public/pp.jpg"
 import design from "../public/design.png"
 import code from "../public/code.png"
 import consulting from "../public/consulting.png"
@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/icon.jpg" />
       </Head>
 
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>ASAD</h1>
@@ -33,17 +33,17 @@ export default function Home() {
           </nav>
 
           <div className=' text-center p-10'>
-            <h2 className=' text-5xl py-2 text-teal-600 font-medium'>Bashar Ahmad</h2>
-            <h3 className=' text-2xl py-2'>Front-End Engineer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>I am a Front-End Engineer with experience in building websites and web applications. I specialize in various JavaScript front framework like Angular, React & Vue. I've also worked with other technologies including Ruby on Rails, Django, and Flask.</p>
+            <h2 className=' text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Bashar Ahmad</h2>
+            <h3 className=' text-2xl py-2 md:text-3xl'>Front-End Engineer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>I am a Front-End Engineer with experience in building websites and web applications. I specialize in various JavaScript front framework like Angular, React & Vue. I've also worked with other technologies including Ruby on Rails, Django, and Flask.</p>
           </div>
           <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillTwitterCircle /> 
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
-            <Image src={bashar} layout="fill" objectFit="cover"/>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden border-4 border-gray-600 border-double shadow-2xl md:h-96 md:w-96'>
+            <Image className='grayscale' src={bashar} layout="fill" objectFit="cover"/>
           </div>
         </section>
         <section>
@@ -56,7 +56,7 @@ export default function Home() {
               Use some technologies for making your site SUPPER FAST
             </p>
           </div>
-          <div>
+          <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image className='m-auto' src={design} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Design</h3>
@@ -96,24 +96,24 @@ export default function Home() {
               Use some technologies for making your site SUPPER FAST
             </p>
           </div>
-          <div>
-            <div>
-              <Image src={web1} />
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
-            <div>
-              <Image src={web2} />
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
-            <div>
-              <Image src={web3} />
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
-            <div>
-              <Image src={web4} />
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
-            <div>
-              <Image src={web5} />
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
-            <div>
-              <Image src={web6} />
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
           </div>
         </section>
