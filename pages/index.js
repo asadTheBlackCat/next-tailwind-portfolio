@@ -38,7 +38,7 @@ export default function Home() {
           <div className=' text-center p-10'>
             <h2 className=' text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Bashar Ahmad</h2>
             <h3 className=' text-2xl py-2 md:text-3xl'>Front-End Engineer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>I am a Front-End Engineer with experience in building websites and web applications. I specialize in various JavaScript front framework like Angular, React & Vue. I've also worked with other technologies including Ruby on Rails, Django, and Flask.</p>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>I am a Front-End Engineer with experience in building websites and web applications. I specialize in various JavaScript front framework like Angular, React & Vue. I have also worked with other technologies including Ruby on Rails, Django, and Flask.</p>
           </div>
           <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillTwitterCircle /> 
@@ -46,7 +46,7 @@ export default function Home() {
             <AiFillYoutube />
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden border-4 border-gray-600 border-double shadow-2xl md:h-96 md:w-96'>
-            <Image className='grayscale' src={bashar} layout="fill" objectFit="cover"/>
+            <Image alt='Bashar Photo' className='grayscale' src={bashar} layout="fill" objectFit="cover"/>
           </div>
         </section>
         <section>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image className='m-auto' src={design} width={100} height={100} />
+              <Image alt='Design' className='m-auto' src={design} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Design</h3>
               <p className='py-2'>Use some technologies for making your site SUPPER FAST</p>
               <h4 className='py-4 text-teal-600'>Tools I used</h4>
@@ -70,7 +70,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-white'>ImageReady</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image className='m-auto' src={code} width={100} height={100} />
+              <Image alt='Design' className='m-auto' src={code} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Design</h3>
               <p className='py-2'>Use some technologies for making your site SUPPER FAST</p>
               <h4 className='py-4 text-teal-600'>Tools I used</h4>
@@ -79,7 +79,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-white'>ImageReady</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image className='m-auto' src={consulting} width={100} height={100} />
+              <Image alt='Consulting' className='m-auto' src={consulting} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Design</h3>
               <p className='py-2'>Use some technologies for making your site SUPPER FAST</p>
               <h4 className='py-4 text-teal-600'>Tools I used</h4>
@@ -101,22 +101,22 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className=' basis-1/3 flex-1'>
-              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
+              <Image alt='Photo' src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
             <div className=' basis-1/3 flex-1'>
-              <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
+              <Image alt='Photo' src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
             <div className=' basis-1/3 flex-1'>
-              <Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
+              <Image alt='Photo' src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
             <div className=' basis-1/3 flex-1'>
-              <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
+              <Image alt='Photo' src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
             <div className=' basis-1/3 flex-1'>
-              <Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
+              <Image alt='Photo' src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
             <div className=' basis-1/3 flex-1'>
-              <Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
+              <Image alt='Photo' src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout=" responsive" />
             </div>
           </div>
         </section>
